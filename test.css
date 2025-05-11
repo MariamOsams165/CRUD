@@ -1,0 +1,205 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: system-ui;
+    /* background: black; */
+
+
+   /* background-color: rgb(249, 245, 240); */
+ /* background:rgb(248, 204, 151) ; */
+}
+.crud{
+    width: 80%;
+   
+    margin: auto;
+}
+h2{
+    color:rgb(1, 86, 1);
+}
+p{
+    color:rgb(1, 86, 1) ;
+}
+.head{
+    text-align: center;
+    margin: 10px 0;
+   
+}
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color:rgb(1, 86, 1);
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+    color: white;
+}
+#title{
+  color:white;
+}
+input:focus{
+    background-color:rgb(180, 180, 148);
+   
+    transform: scale(1.1);
+    /* عشان اخلي الالمستطيل يكبر عند الكتابه */
+
+}
+.price input{
+    width: 20%;
+    /* عشان اخلي price .taxes.adds.discount في سطر واحد جنب بعض */
+
+
+}
+
+#total{
+    background:rgb(91, 121, 230);
+    padding: 5px 2px;
+    border-radius:4px ;
+}
+#total::before{
+    content: 'Total:';
+    /* عشان يظهر كلمه totel */
+}
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background:rgb(248, 204, 151) ;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+button:hover{
+    background: rgb(247, 170, 55);
+    letter-spacing: 1px;
+    /* عشان اعمل تباعد بين الحروف لما اقف عليها */
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+    /* عشان اخلي زرار في اليمين وزرار في السشمال */
+}
+.btn button{
+width: 45%;
+}
+/* #deleteAll{
+    margin: 20px 0;
+} */
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    
+}
+table th{
+   text-transform: uppercase;
+   color:rgb(1, 86, 1);
+    border: 3px , solid white;
+    border-radius: 20px;
+    width: 50px;
+   margin-left: 40%;
+ 
+
+}
+th ,td{
+    padding: 5px;
+}
+#deleteAll{
+    margin: 20px 0;
+}
+/* fieldset{
+    border: 5px , solid  rgb(1, 86, 1);;
+    border-radius: 20px;
+    width: 90%;
+  margin: auto;
+  background-color: rgb(240, 237, 233);
+height: 100%;
+}  */
+@media (max-width: 768px) {
+    .Crud {
+      width: 95%;
+    }
+  
+    .price input {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  
+    .btnSearch {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .btnSearch button {
+      width: 100%;
+    }
+  
+    table {
+      font-size: 12px;
+      overflow-x: auto;
+      display: block;
+    }
+  
+    th, td {
+      padding: 3px;
+      white-space: nowrap;
+    }
+  
+    input, button {
+      font-size: 14px;
+    }
+  
+    #total {
+      display: inline-block;
+      margin-top: 5px;
+    }
+  }
+  @media (max-width: 500px) {
+    h2 {
+      font-size: 20px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  
+   input ,#submit {
+      font-size: 10px;
+      width: 100%;
+      height: 20px;
+  }
+  
+  
+   button{
+        font-size: 10px;
+      width: 50px;
+      height: 20px;
+   }
+  
+    #total {
+      font-size: 13px;
+    }
+  
+    table {
+      font-size:7px;
+     
+    }
+  
+    .price input {
+      width: 100%;
+    }
+  
+    th, td {
+      padding: 4px;
+    }
+    div #deleteAll{
+      font-size: 10px;
+      width: 100%;
+      background:rgb(248, 204, 151) ;
+      text-align: center;
+      border-radius: 10px;
+     
+   }}
